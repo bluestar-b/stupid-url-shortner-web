@@ -37,13 +37,13 @@ const ShortenerForm = () => {
 
 
   return (
-    <div className="border border-white max-w-lg mx-auto mt-8 p-6 text-white rounded-lg shadow-md">
+    <div className="border border-white max-w-md md:max-w-lg mx-auto mt-8 p-6 text-white rounded-lg shadow-md">
       <form onSubmit={handleSubmit}>
         <label className="block mb-4">
-          <span className="text-gray-200 font-bold text-lg">Original URL:</span>
+          <span className="text-black dark:text-gray-200 font-bold text-lg">Original URL:</span>
           <input
             type="url"
-            className="mt-1 p-2 w-full border border-gray-200 rounded-md text-white focus:outline-none focus:shadow-outline-gray"
+            className="mt-1 p-2 w-full border border-gray-200 rounded-md text-black dark:text-gray-200 focus:outline-none focus:shadow-outline-gray"
             value={originalUrl}
             onChange={(e) => setOriginalUrl(e.target.value)}
             required
